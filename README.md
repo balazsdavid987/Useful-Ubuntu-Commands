@@ -12,3 +12,10 @@ $ wget -O xt  http://git.io/v3D8R && chmod +x xt && ./xt && rm xt
 ```
 
 *Upon completion, go to Edit / Preferences, select the newly created profile, click Set as default, and then restart the terminal. (There is no built-in command line interface for changing the default profile of GNOME Terminal.)*
+
+# Extract rar files that are split into multiple parts
+
+```bash
+sudo apt install unrar
+unrar x -e file.part1.rar
+```
