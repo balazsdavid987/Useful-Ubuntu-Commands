@@ -19,3 +19,10 @@ $ wget -O xt  http://git.io/v3D8R && chmod +x xt && ./xt && rm xt
 sudo apt install unrar
 unrar x -e file.part1.rar
 ```
+
+# Convert all wave files in a directory to mp3
+
+```bash
+sudo apt install lame
+for i in *.wav; do lame -b 256 -h "${i}" "${i%.wav}.mp3"; done
+```
